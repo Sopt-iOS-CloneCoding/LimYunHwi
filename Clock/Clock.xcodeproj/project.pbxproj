@@ -13,6 +13,14 @@
 		9ADE4B4B2806A66F00D6ACA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B492806A66F00D6ACA6 /* Main.storyboard */; };
 		9ADE4B4D2806A67000D6ACA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */; };
 		9ADE4B502806A67100D6ACA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B4E2806A67100D6ACA6 /* LaunchScreen.storyboard */; };
+		9ADE4B582806AA5400D6ACA6 /* WorldClock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */; };
+		9ADE4B5A2806AA7300D6ACA6 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */; };
+		9ADE4B5C2806AB7D00D6ACA6 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */; };
+		9ADE4B612806AC2500D6ACA6 /* Stopwatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */; };
+		9ADE4B632806AC3E00D6ACA6 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */; };
+		9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */; };
+		9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */; };
+		9ADE4B692806AD6700D6ACA6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,14 @@
 		9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ADE4B4F2806A67100D6ACA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ADE4B512806A67100D6ACA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorldClock.storyboard; sourceTree = "<group>"; };
+		9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
+		9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stopwatch.storyboard; sourceTree = "<group>"; };
+		9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +76,17 @@
 				9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */,
 				9ADE4B472806A66F00D6ACA6 /* ViewController.swift */,
 				9ADE4B492806A66F00D6ACA6 /* Main.storyboard */,
+				9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */,
+				9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */,
+				9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */,
+				9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */,
 				9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */,
 				9ADE4B4E2806A67100D6ACA6 /* LaunchScreen.storyboard */,
 				9ADE4B512806A67100D6ACA6 /* Info.plist */,
+				9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */,
+				9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */,
+				9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */,
+				9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -125,8 +149,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADE4B582806AA5400D6ACA6 /* WorldClock.storyboard in Resources */,
 				9ADE4B502806A67100D6ACA6 /* LaunchScreen.storyboard in Resources */,
 				9ADE4B4D2806A67000D6ACA6 /* Assets.xcassets in Resources */,
+				9ADE4B5C2806AB7D00D6ACA6 /* Alarm.storyboard in Resources */,
+				9ADE4B612806AC2500D6ACA6 /* Stopwatch.storyboard in Resources */,
+				9ADE4B632806AC3E00D6ACA6 /* Timer.storyboard in Resources */,
 				9ADE4B4B2806A66F00D6ACA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +166,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */,
+				9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */,
+				9ADE4B5A2806AA7300D6ACA6 /* WorldClockViewController.swift in Sources */,
+				9ADE4B692806AD6700D6ACA6 /* TimerViewController.swift in Sources */,
 				9ADE4B482806A66F00D6ACA6 /* ViewController.swift in Sources */,
 				9ADE4B442806A66F00D6ACA6 /* AppDelegate.swift in Sources */,
 				9ADE4B462806A66F00D6ACA6 /* SceneDelegate.swift in Sources */,
