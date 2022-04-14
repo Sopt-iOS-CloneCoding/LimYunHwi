@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9A4AC0F728070CE700D3F7EE /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AC0F628070CE700D3F7EE /* WorldClockTableViewCell.swift */; };
 		9A4AC0FA2807146900D3F7EE /* CityClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AC0F92807146900D3F7EE /* CityClock.swift */; };
+		9A63116E28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */; };
 		9ADE4B442806A66F00D6ACA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */; };
 		9ADE4B462806A66F00D6ACA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */; };
 		9ADE4B482806A66F00D6ACA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B472806A66F00D6ACA6 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		9A4AC0F628070CE700D3F7EE /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
 		9A4AC0F92807146900D3F7EE /* CityClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityClock.swift; sourceTree = "<group>"; };
+		9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		9ADE4B402806A66F00D6ACA6 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,14 @@
 			path = WorldClock;
 			sourceTree = "<group>";
 		};
+		9A63116C28082F2F00E2B4E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9ADE4B372806A66F00D6ACA6 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		9ADE4B422806A66F00D6ACA6 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				9A63116C28082F2F00E2B4E6 /* Extension */,
 				9A4AC0F8280713AC00D3F7EE /* WorldClock */,
 				9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */,
 				9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */,
@@ -180,6 +191,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A63116E28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift in Sources */,
 				9A4AC0FA2807146900D3F7EE /* CityClock.swift in Sources */,
 				9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */,
 				9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */,

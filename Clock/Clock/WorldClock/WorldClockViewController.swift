@@ -8,8 +8,10 @@
 import UIKit
 
 class WorldClockViewController: UIViewController {
+    @IBOutlet var editButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
+    var doneButton: UIBarButtonItem?
     var cityClocks: [CityClock] = [] {
         didSet{
             //ADD 도시 추가 기능 구현 시 구현 예정
@@ -27,6 +29,25 @@ class WorldClockViewController: UIViewController {
         //FIX 임시 데이터
         let date = Date()
         cityClocks.append(CityClock(cityName: "서울", time: date))
+        cityClocks.append(CityClock(cityName: "뉴욕", time: date))
+        
+        configureTabBarItem()
+    }
+    
+    private func configureTabBarItem(){
+        doneButton = UIBarButtonItem(title: "완료", style: .done, target: self, action: #selector(tapDoneBarButton))
+        
+        editButton.isHidden = cityClocks.isEmpty
+    }
+    
+    @objc private func tapDoneBarButton() {
+        self.navigationItem.leftBarButtonItem = editButton
+        self.tableView.setEditing(false, animated: true)
+    }
+    
+    @IBAction func tapEditBarButton(_ sender: UIBarButtonItem) {
+        self.navigationItem.leftBarButtonItem = doneButton
+        self.tableView.setEditing(true, animated: true)
     }
 }
 

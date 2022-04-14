@@ -87,7 +87,7 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="cityLabel" destination="XS3-sK-xLT" id="RyP-c2-2fn"/>
+                                            <outlet property="cityLabel" destination="BHx-9k-5KW" id="gyh-3d-jSV"/>
                                             <outlet property="timeDifferenceLabel" destination="XS3-sK-xLT" id="QxS-HB-fo7"/>
                                             <outlet property="timeLabel" destination="tAz-LY-WEp" id="ra0-uz-LBT"/>
                                             <outlet property="timeSlotLabel" destination="tRd-wu-sEJ" id="k2n-Tt-9ob"/>
@@ -106,11 +106,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="세계 시계" id="qwN-Je-DW2">
-                        <barButtonItem key="leftBarButtonItem" title="편집" id="h0w-Wa-Rqe"/>
+                        <barButtonItem key="leftBarButtonItem" title="편집" id="h0w-Wa-Rqe">
+                            <connections>
+                                <action selector="tapEditBarButton:" destination="Y6W-OH-hqX" id="76J-gh-fyI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="rbT-xy-OP7"/>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="editButton" destination="h0w-Wa-Rqe" id="AQ4-BU-pvs"/>
                         <outlet property="tableView" destination="jVv-lY-57a" id="aho-jt-NjM"/>
                     </connections>
                 </viewController>
