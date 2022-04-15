@@ -72,6 +72,19 @@ extension WorldClockViewController : UITableViewDataSource {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+    
+    func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
+        var cityClocks = self.cityClocks
+        let cityClock = cityClocks[sourceIndexPath.row]
+        cityClocks.remove(at: sourceIndexPath.row)
+        cityClocks.insert(cityClock, at: destinationIndexPath.row)
+        
+        self.cityClocks = cityClocks
+    }
 }
 
 extension WorldClockViewController: UITableViewDelegate {
