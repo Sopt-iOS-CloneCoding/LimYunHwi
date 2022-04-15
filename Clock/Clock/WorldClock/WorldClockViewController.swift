@@ -14,6 +14,7 @@ class WorldClockViewController: UIViewController {
     var doneButton: UIBarButtonItem?
     var cityClocks: [CityClock] = [] {
         didSet{
+            editButton.isHidden = cityClocks.isEmpty
             //ADD 도시 추가 기능 구현 시 구현 예정
         }
     }
@@ -84,6 +85,15 @@ extension WorldClockViewController : UITableViewDataSource {
         cityClocks.insert(cityClock, at: destinationIndexPath.row)
         
         self.cityClocks = cityClocks
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        self.cityClocks.remove(at: indexPath.row)
+        self.tableView.deleteRows(at: [indexPath], with: .automatic)
+        
+        if self.cityClocks.isEmpty {
+            tapDoneBarButton()
+        }
     }
 }
 
