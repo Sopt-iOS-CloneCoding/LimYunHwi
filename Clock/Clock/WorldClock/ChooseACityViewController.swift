@@ -32,7 +32,7 @@ extension ChooseACityViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ChooseACityTableViewCell.identifier, for: indexPath) as? ChooseACityTableViewCell else {return UITableViewCell()}
         
-        cell.configureView(CityClock.sampleData[indexPath.row].cityName)
+        cell.configureView(CityClock.sampleData[indexPath.row].cityName, CityClock.sampleData[indexPath.row].countryName)
         
         return cell
     }

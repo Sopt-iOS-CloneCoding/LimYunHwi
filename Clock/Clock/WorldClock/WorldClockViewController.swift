@@ -29,8 +29,8 @@ class WorldClockViewController: UIViewController {
         
         //FIX 임시 데이터
         let date = Date()
-        cityClocks.append(CityClock(cityName: "서울", time: date))
-        cityClocks.append(CityClock(cityName: "뉴욕", time: date))
+        cityClocks.append(CityClock(cityName: "서울", countryName: "대한민국", time: date))
+        cityClocks.append(CityClock(cityName: "뉴욕", countryName: "미국", time: date))
         
         configureTabBarItem()
     }

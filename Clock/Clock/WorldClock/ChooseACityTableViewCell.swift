@@ -20,7 +20,7 @@ class ChooseACityTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
-    func configureView(_ cityName: String){
-        self.cityNameLabel.text = cityName
+    func configureView(_ cityName: String, _ countryName: String){
+        self.cityNameLabel.text = "\(cityName), \(countryName)"
     }
 }
