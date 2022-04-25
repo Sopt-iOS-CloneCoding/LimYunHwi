@@ -8,7 +8,10 @@
 import UIKit
 
 class ChooseACityTableViewCell: UITableViewCell {
-
+    @IBOutlet weak var cityNameLabel: UILabel!
+    
+    static let identifier = "ChooseACityTableViewCell"
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
@@ -17,4 +20,7 @@ class ChooseACityTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func configureView(_ cityName: String){
+        self.cityNameLabel.text = cityName
+    }
 }

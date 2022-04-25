@@ -20,7 +20,7 @@
                                 <rect key="frame" x="10" y="149" width="394" height="747"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
-                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" prompt="도시 선택" placeholder="검색" showsCancelButton="YES" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="osY-oB-EhJ">
+                            <searchBar contentMode="redraw" barStyle="black" searchBarStyle="minimal" prompt="도시 선택" placeholder="검색" showsCancelButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="osY-oB-EhJ">
                                 <rect key="frame" x="10" y="54" width="394" height="85"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="search"/>
@@ -42,6 +42,9 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rTJ-KB-nYw" secondAttribute="trailing" constant="10" id="ztr-tq-hUx"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTableView" destination="rTJ-KB-nYw" id="mZU-0J-N8q"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
