@@ -11,12 +11,16 @@ class ChooseACityViewController: UIViewController {
     @IBOutlet weak var cityTableView: UITableView!
     
     var cityColocks: [CityClock] = []
+    var sectionTitles: [String] = []
+    var cityColockDict = [String : [CityClock]]()
+    var headerTitles: [String] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cityTableView.dataSource = self
         cityColocks = getCityClocksToSystem()
+        setSectionTitles()
         
         configureTableViewCell()
     }
@@ -50,18 +54,47 @@ class ChooseACityViewController: UIViewController {
         
         return cityClocks
     }
+    
+    private func setSectionTitles() {
+//        for num in 65...90 {
+//            headerTitles.append(UnicodeScalar(num)!.description)
+//        }
+        
+        sectionTitles = Array(Set(cityColocks.compactMap{
+            cityColockDict[String($0.cityName.prefix(1))] = [CityClock]()
+            return String($0.cityName.prefix(1))
+        }))
+        sectionTitles.sort()
+        cityColocks.forEach{
+            cityColockDict[String($0.cityName.prefix(1))]?.append($0)
+            
+        }
+    }
 }
 
 extension ChooseACityViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cityColocks.count
+        return cityColockDict[sectionTitles[section]]!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ChooseACityTableViewCell.identifier, for: indexPath) as? ChooseACityTableViewCell else {return UITableViewCell()}
         
-        cell.configureView(cityColocks[indexPath.row].cityName, cityColocks[indexPath.row].countryName)
+        cell.configureView(cityColockDict[sectionTitles[indexPath.section]]?[indexPath.row].cityName ?? "", cityColockDict[sectionTitles[indexPath.section]]?[indexPath.row].countryName ?? ""
+        )
         
         return cell
+    }
+    
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return sectionTitles
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return sectionTitles.count
+    }
+    
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return sectionTitles[section]
     }
 }
