@@ -27,11 +27,6 @@ class WorldClockViewController: UIViewController {
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
-        //FIX 임시 데이터
-        let date = Date()
-        cityClocks.append(CityClock(cityName: "서울", countryName: "대한민국", time: date))
-        cityClocks.append(CityClock(cityName: "뉴욕", countryName: "미국", time: date))
-        
         configureTabBarItem()
     }
     
@@ -59,17 +54,6 @@ extension WorldClockViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorldClockTableViewCell", for: indexPath) as? WorldClockTableViewCell else {return UITableViewCell()}
-        
-        //FIX 임시 데이터 연결
-        let city = cityClocks[indexPath.row]
-        cell.cityLabel.text = city.cityName
-        let formatter = DateFormatter()
-        formatter.locale = Locale(identifier: Locale.current.identifier)
-        formatter.timeZone = TimeZone(identifier: TimeZone.current.identifier)
-        formatter.dateFormat = "HH:mm"
-        cell.timeLabel.text = formatter.string(from: city.time)
-        cell.timeSlotLabel.text = "오후"
-        cell.timeDifferenceLabel.text = "+0시간"
         
         return cell
     }

@@ -10,10 +10,13 @@ import UIKit
 class ChooseACityViewController: UIViewController {
     @IBOutlet weak var cityTableView: UITableView!
     
+    var cityColocks: [CityClock] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         cityTableView.dataSource = self
+        cityColocks = getCityClocksToSystem()
         
         configureTableViewCell()
     }
@@ -22,17 +25,39 @@ class ChooseACityViewController: UIViewController {
         let nib = UINib(nibName: ChooseACityTableViewCell.identifier, bundle: nil)
         cityTableView.register(nib, forCellReuseIdentifier: ChooseACityTableViewCell.identifier)
     }
+    
+    private func getCityClocksToSystem() -> [CityClock] {
+        var cityClocks: [CityClock] = []
+        
+        for id in TimeZone.knownTimeZoneIdentifiers {
+            let local = Locale(identifier: "ko_KR") //Locale.current.identifier
+            let cityTimeZone = TimeZone(identifier: id)
+            let cityName = NSTimeZone(name: id)?.name
+            
+            let dateFormatter = DateFormatter()
+            dateFormatter.locale = local
+            dateFormatter.timeZone = cityTimeZone
+            dateFormatter.dateFormat = "HH:mm"
+            
+            if let cityName = cityName {
+                let cityClock = CityClock(cityName: cityName, countryName: "", time: dateFormatter)
+                cityClocks.append(cityClock)
+            }
+        }
+        
+        return cityClocks
+    }
 }
 
 extension ChooseACityViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return CityClock.sampleData.count
+        return cityColocks.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: ChooseACityTableViewCell.identifier, for: indexPath) as? ChooseACityTableViewCell else {return UITableViewCell()}
         
-        cell.configureView(CityClock.sampleData[indexPath.row].cityName, CityClock.sampleData[indexPath.row].countryName)
+        cell.configureView(cityColocks[indexPath.row].cityName, cityColocks[indexPath.row].countryName)
         
         return cell
     }
