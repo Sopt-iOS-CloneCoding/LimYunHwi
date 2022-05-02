@@ -32,16 +32,19 @@ class ChooseACityViewController: UIViewController {
         for id in TimeZone.knownTimeZoneIdentifiers {
             let local = Locale(identifier: "ko_KR") //Locale.current.identifier
             let cityTimeZone = TimeZone(identifier: id)
-            let cityName = NSTimeZone(name: id)?.name
+            let city = NSTimeZone(name: id)?.name
             
             let dateFormatter = DateFormatter()
             dateFormatter.locale = local
             dateFormatter.timeZone = cityTimeZone
             dateFormatter.dateFormat = "HH:mm"
             
-            if let cityName = cityName {
-                let cityClock = CityClock(cityName: cityName, countryName: "", time: dateFormatter)
-                cityClocks.append(cityClock)
+            if let city = city {
+                let cityName = city.components(separatedBy: "/")
+                if cityName.count >= 2{
+                    let cityClock = CityClock(cityName: cityName[1], countryName: "", time: dateFormatter)
+                    cityClocks.append(cityClock)
+                }
             }
         }
         
