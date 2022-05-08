@@ -111,7 +111,11 @@
                                 <action selector="tapEditBarButton:" destination="Y6W-OH-hqX" id="76J-gh-fyI"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rbT-xy-OP7"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="rbT-xy-OP7">
+                            <connections>
+                                <action selector="tapAddClock:" destination="Y6W-OH-hqX" id="LQ2-jN-tD7"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>

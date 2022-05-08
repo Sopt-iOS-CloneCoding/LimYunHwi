@@ -45,6 +45,13 @@ class WorldClockViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = doneButton
         self.tableView.setEditing(true, animated: true)
     }
+    
+    @IBAction func tapAddClock(_ sender: UIBarButtonItem) {
+        let storyboard = UIStoryboard(name: "ChooseACity", bundle: nil)
+        guard let chooseACityViewController = storyboard.instantiateViewController(withIdentifier: "ChooseACityViewController") as? ChooseACityViewController else {return}
+        
+        self.present(chooseACityViewController, animated: true)
+    }
 }
 
 extension WorldClockViewController : UITableViewDataSource {

@@ -44,6 +44,7 @@
                     </view>
                     <connections>
                         <outlet property="cityTableView" destination="rTJ-KB-nYw" id="mZU-0J-N8q"/>
+                        <outlet property="searchBar" destination="osY-oB-EhJ" id="aRM-HK-zcY"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

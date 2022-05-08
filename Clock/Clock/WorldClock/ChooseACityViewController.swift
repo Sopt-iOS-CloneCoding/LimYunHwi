@@ -9,6 +9,7 @@ import UIKit
 
 class ChooseACityViewController: UIViewController {
     @IBOutlet weak var cityTableView: UITableView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     var cityColocks: [CityClock] = []
     var sectionTitles: [String] = []
@@ -19,9 +20,10 @@ class ChooseACityViewController: UIViewController {
         super.viewDidLoad()
         
         cityTableView.dataSource = self
+        searchBar.delegate = self
+        
         cityColocks = getCityClocksToSystem()
         setSectionTitles()
-        
         configureTableViewCell()
     }
     
@@ -96,5 +98,11 @@ extension ChooseACityViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionTitles[section]
+    }
+}
+
+extension ChooseACityViewController: UISearchBarDelegate {
+    func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
+        self.dismiss(animated: true)
     }
 }
