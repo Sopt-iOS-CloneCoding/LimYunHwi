@@ -25,11 +25,23 @@ class ChooseACityViewController: UIViewController {
         cityColocks = getCityClocksToSystem()
         setSectionTitles()
         configureTableViewCell()
+        configureSearchBar()
+        configureTableView()
     }
     
     private func configureTableViewCell(){
         let nib = UINib(nibName: ChooseACityTableViewCell.identifier, bundle: nil)
         cityTableView.register(nib, forCellReuseIdentifier: ChooseACityTableViewCell.identifier)
+    }
+    
+    private func configureTableView() {
+        cityTableView.sectionIndexColor = .systemOrange
+    }
+    
+    private func configureSearchBar() {
+        if let cancelButton = searchBar.value(forKey: "cancelButton") as? UIButton {
+            cancelButton.isEnabled = true
+        }
     }
     
     private func getCityClocksToSystem() -> [CityClock] {
