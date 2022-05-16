@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146667D028325002003FEDA8 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146667CF28325002003FEDA8 /* NotificationName.swift */; };
 		14CE7A7428165CE30039F349 /* ChooseACity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE7A7328165CE30039F349 /* ChooseACity.storyboard */; };
 		14CE7A79281663200039F349 /* ChooseACityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE7A77281663200039F349 /* ChooseACityTableViewCell.swift */; };
 		14CE7A7A281663200039F349 /* ChooseACityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CE7A78281663200039F349 /* ChooseACityTableViewCell.xib */; };
@@ -31,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146667CF28325002003FEDA8 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		14CE7A7328165CE30039F349 /* ChooseACity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseACity.storyboard; sourceTree = "<group>"; };
 		14CE7A77281663200039F349 /* ChooseACityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseACityTableViewCell.swift; sourceTree = "<group>"; };
 		14CE7A78281663200039F349 /* ChooseACityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseACityTableViewCell.xib; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 		9ADE4B422806A66F00D6ACA6 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				146667CF28325002003FEDA8 /* NotificationName.swift */,
 				9A63116C28082F2F00E2B4E6 /* Extension */,
 				9A4AC0F8280713AC00D3F7EE /* WorldClock */,
 				9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */,
@@ -222,6 +225,7 @@
 				9ADE4B692806AD6700D6ACA6 /* TimerViewController.swift in Sources */,
 				9ADE4B482806A66F00D6ACA6 /* ViewController.swift in Sources */,
 				9ADE4B442806A66F00D6ACA6 /* AppDelegate.swift in Sources */,
+				146667D028325002003FEDA8 /* NotificationName.swift in Sources */,
 				9ADE4B462806A66F00D6ACA6 /* SceneDelegate.swift in Sources */,
 				14CE7A79281663200039F349 /* ChooseACityTableViewCell.swift in Sources */,
 				9A4AC0F728070CE700D3F7EE /* WorldClockTableViewCell.swift in Sources */,

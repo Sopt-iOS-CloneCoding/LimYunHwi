@@ -15,25 +15,35 @@ class WorldClockViewController: UIViewController {
     var cityClocks: [CityClock] = [] {
         didSet{
             editButton.isHidden = cityClocks.isEmpty
-            //ADD 도시 추가 기능 구현 시 구현 예정
+            self.tableView.reloadData()
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        //FIX 정리 필요
         self.tableView.dataSource = self
         self.tableView.delegate = self
         
         configureTabBarItem()
+        addNotificationObserver()
     }
     
     private func configureTabBarItem(){
         doneButton = UIBarButtonItem(title: "완료", style: .done, target: self, action: #selector(tapDoneBarButton))
         
         editButton.isHidden = cityClocks.isEmpty
+    }
+    
+    //MARK: - Notification
+    private func addNotificationObserver(){
+        NotificationCenter.default.addObserver(self, selector: #selector(addCityClock), name: NotificationName.chooseACity, object: nil)
+    }
+    
+    @objc private func addCityClock(_ notification: Notification){
+        guard let object = notification.object as? [ String : CityClock] else {return}
+        guard let cityClock = object["cityClock"] else {return}
+        self.cityClocks.append(cityClock)
     }
     
     @objc private func tapDoneBarButton() {
@@ -61,6 +71,7 @@ extension WorldClockViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "WorldClockTableViewCell", for: indexPath) as? WorldClockTableViewCell else {return UITableViewCell()}
+        cell.configureCell(cityClocks[indexPath.row])
         
         return cell
     }

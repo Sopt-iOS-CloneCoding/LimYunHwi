@@ -16,8 +16,10 @@ class WorldClockTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    
+    func configureCell(_ cityClock: CityClock){
+        self.cityLabel.text = cityClock.cityName
+        self.timeLabel.text = cityClock.time.string(from: Date())
+        //self.timeDifferenceLabel.text = cityClock.time.
     }
 }

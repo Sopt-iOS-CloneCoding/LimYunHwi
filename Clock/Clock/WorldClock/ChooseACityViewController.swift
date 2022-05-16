@@ -22,6 +22,7 @@ class ChooseACityViewController: UIViewController {
         super.viewDidLoad()
         
         cityTableView.dataSource = self
+        cityTableView.delegate = self
         searchBar.delegate = self
         
         cityClocks = getCityClocksToSystem()
@@ -59,7 +60,7 @@ class ChooseACityViewController: UIViewController {
             let dateFormatter = DateFormatter()
             dateFormatter.locale = local
             dateFormatter.timeZone = cityTimeZone
-            dateFormatter.dateFormat = "HH:mm"
+            dateFormatter.dateFormat = "a HH:mm"
             
             if let city = city {
                 let cityName = city.components(separatedBy: "/")
@@ -74,9 +75,9 @@ class ChooseACityViewController: UIViewController {
     }
     
     private func setSectionTitles() {
-//        for num in 65...90 {
-//            headerTitles.append(UnicodeScalar(num)!.description)
-//        }
+        //        for num in 65...90 {
+        //            headerTitles.append(UnicodeScalar(num)!.description)
+        //        }
         
         sectionTitles = Array(Set(mutableCityColocks.compactMap{
             cityColockDict[String($0.cityName.prefix(1))] = [CityClock]()
@@ -137,6 +138,23 @@ extension ChooseACityViewController: UITableViewDataSource {
     }
 }
 
+extension ChooseACityViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cityClock: CityClock?
+        
+        if isSearching {
+            cityClock = mutableCityColocks[indexPath.row]
+        } else {
+            cityClock = cityColockDict[sectionTitles[indexPath.section]]?[indexPath.row]
+        }
+        
+        guard let cityClock = cityClock else {return}
+        NotificationCenter.default.post(name: NotificationName.chooseACity, object: ["cityClock" : cityClock])
+        
+        self.dismiss(animated: true)
+    }
+}
+
 extension ChooseACityViewController: UISearchBarDelegate {
     func searchBarCancelButtonClicked(_ searchBar: UISearchBar) {
         self.dismiss(animated: true)
@@ -152,7 +170,7 @@ extension ChooseACityViewController: UISearchBarDelegate {
             return
         }
         var temp = [CityClock]()
-
+        
         isSearching = true
         
         for city in mutableCityColocks {
