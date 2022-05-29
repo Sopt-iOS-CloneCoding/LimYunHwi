@@ -15,7 +15,6 @@ class WorldClockViewController: UIViewController {
     var cityClocks: [CityClock] = [] {
         didSet{
             editButton.isHidden = cityClocks.isEmpty
-            self.tableView.reloadData()
         }
     }
     
@@ -44,6 +43,8 @@ class WorldClockViewController: UIViewController {
         guard let object = notification.object as? [ String : CityClock] else {return}
         guard let cityClock = object["cityClock"] else {return}
         self.cityClocks.append(cityClock)
+        
+        self.tableView.reloadData()
     }
     
     @objc private func tapDoneBarButton() {
