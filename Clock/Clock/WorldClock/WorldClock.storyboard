@@ -31,7 +31,7 @@
                                                     <rect key="frame" x="25" y="0.0" width="364" height="133"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xG0-PQ-ojf">
-                                                            <rect key="frame" x="0.0" y="41" width="131" height="51"/>
+                                                            <rect key="frame" x="0.0" y="41" width="186" height="51"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="rLt-2E-N6D">
                                                                     <rect key="frame" x="0.0" y="0.0" width="70.5" height="16"/>
@@ -59,16 +59,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="zNV-eh-3bG">
-                                                            <rect key="frame" x="231" y="41.5" width="133" height="50"/>
+                                                            <rect key="frame" x="286" y="42.5" width="78" height="48"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" text="" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tRd-wu-sEJ">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                                                                    <fontDescription key="fontDescription" type="system" pointSize="25"/>
-                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <nil key="highlightedColor"/>
-                                                                </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="500" text="7:32" textAlignment="natural" lineBreakMode="clip" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="tAz-LY-WEp">
-                                                                    <rect key="frame" x="55" y="2" width="78" height="48"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="78" height="48"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                     <nil key="highlightedColor"/>
@@ -89,8 +83,8 @@
                                         <connections>
                                             <outlet property="cityLabel" destination="BHx-9k-5KW" id="gyh-3d-jSV"/>
                                             <outlet property="timeDifferenceLabel" destination="XS3-sK-xLT" id="QxS-HB-fo7"/>
+                                            <outlet property="timeIntervalLabel" destination="oTB-gf-sES" id="oRC-MN-dNA"/>
                                             <outlet property="timeLabel" destination="tAz-LY-WEp" id="ra0-uz-LBT"/>
-                                            <outlet property="timeSlotLabel" destination="tRd-wu-sEJ" id="k2n-Tt-9ob"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
