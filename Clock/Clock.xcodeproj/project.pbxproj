@@ -69,6 +69,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		142EDD2A284492A40050968C /* Stopwatch */ = {
+			isa = PBXGroup;
+			children = (
+				9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */,
+				9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */,
+			);
+			path = Stopwatch;
+			sourceTree = "<group>";
+		};
 		14CE7A7528165CEE0039F349 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,18 +131,17 @@
 				146667CF28325002003FEDA8 /* NotificationName.swift */,
 				9A63116C28082F2F00E2B4E6 /* Extension */,
 				9A4AC0F8280713AC00D3F7EE /* WorldClock */,
+				142EDD2A284492A40050968C /* Stopwatch */,
 				9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */,
 				9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */,
 				9ADE4B472806A66F00D6ACA6 /* ViewController.swift */,
 				9ADE4B492806A66F00D6ACA6 /* Main.storyboard */,
 				9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */,
-				9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */,
 				9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */,
 				9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */,
 				9ADE4B4E2806A67100D6ACA6 /* LaunchScreen.storyboard */,
 				9ADE4B512806A67100D6ACA6 /* Info.plist */,
 				9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */,
-				9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */,
 				9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */,
 			);
 			path = Clock;
