@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146667D028325002003FEDA8 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146667CF28325002003FEDA8 /* NotificationName.swift */; };
+		14CE7A7428165CE30039F349 /* ChooseACity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE7A7328165CE30039F349 /* ChooseACity.storyboard */; };
+		14CE7A79281663200039F349 /* ChooseACityTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE7A77281663200039F349 /* ChooseACityTableViewCell.swift */; };
+		14CE7A7A281663200039F349 /* ChooseACityTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 14CE7A78281663200039F349 /* ChooseACityTableViewCell.xib */; };
+		14CE7A7C2816639A0039F349 /* ChooseACityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CE7A7B2816639A0039F349 /* ChooseACityViewController.swift */; };
+		9A4AC0F728070CE700D3F7EE /* WorldClockTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AC0F628070CE700D3F7EE /* WorldClockTableViewCell.swift */; };
+		9A4AC0FA2807146900D3F7EE /* CityClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A4AC0F92807146900D3F7EE /* CityClock.swift */; };
+		9A63116E28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */; };
 		9ADE4B442806A66F00D6ACA6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */; };
 		9ADE4B462806A66F00D6ACA6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */; };
 		9ADE4B482806A66F00D6ACA6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B472806A66F00D6ACA6 /* ViewController.swift */; };
 		9ADE4B4B2806A66F00D6ACA6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B492806A66F00D6ACA6 /* Main.storyboard */; };
 		9ADE4B4D2806A67000D6ACA6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */; };
 		9ADE4B502806A67100D6ACA6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B4E2806A67100D6ACA6 /* LaunchScreen.storyboard */; };
+		9ADE4B582806AA5400D6ACA6 /* WorldClock.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */; };
+		9ADE4B5A2806AA7300D6ACA6 /* WorldClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */; };
+		9ADE4B5C2806AB7D00D6ACA6 /* Alarm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */; };
+		9ADE4B612806AC2500D6ACA6 /* Stopwatch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */; };
+		9ADE4B632806AC3E00D6ACA6 /* Timer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */; };
+		9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */; };
+		9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */; };
+		9ADE4B692806AD6700D6ACA6 /* TimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146667CF28325002003FEDA8 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
+		14CE7A7328165CE30039F349 /* ChooseACity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseACity.storyboard; sourceTree = "<group>"; };
+		14CE7A77281663200039F349 /* ChooseACityTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseACityTableViewCell.swift; sourceTree = "<group>"; };
+		14CE7A78281663200039F349 /* ChooseACityTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChooseACityTableViewCell.xib; sourceTree = "<group>"; };
+		14CE7A7B2816639A0039F349 /* ChooseACityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseACityViewController.swift; sourceTree = "<group>"; };
+		9A4AC0F628070CE700D3F7EE /* WorldClockTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockTableViewCell.swift; sourceTree = "<group>"; };
+		9A4AC0F92807146900D3F7EE /* CityClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CityClock.swift; sourceTree = "<group>"; };
+		9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBarButtonItemExtension.swift; sourceTree = "<group>"; };
 		9ADE4B402806A66F00D6ACA6 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +48,14 @@
 		9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9ADE4B4F2806A67100D6ACA6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9ADE4B512806A67100D6ACA6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WorldClock.storyboard; sourceTree = "<group>"; };
+		9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldClockViewController.swift; sourceTree = "<group>"; };
+		9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Alarm.storyboard; sourceTree = "<group>"; };
+		9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Stopwatch.storyboard; sourceTree = "<group>"; };
+		9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Timer.storyboard; sourceTree = "<group>"; };
+		9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchViewController.swift; sourceTree = "<group>"; };
+		9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +69,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		14CE7A7528165CEE0039F349 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				9A4AC0F92807146900D3F7EE /* CityClock.swift */,
+			);
+			path = DataModel;
+			sourceTree = "<group>";
+		};
+		9A4AC0F8280713AC00D3F7EE /* WorldClock */ = {
+			isa = PBXGroup;
+			children = (
+				14CE7A7528165CEE0039F349 /* DataModel */,
+				9A4AC0F628070CE700D3F7EE /* WorldClockTableViewCell.swift */,
+				9ADE4B592806AA7300D6ACA6 /* WorldClockViewController.swift */,
+				14CE7A7B2816639A0039F349 /* ChooseACityViewController.swift */,
+				14CE7A77281663200039F349 /* ChooseACityTableViewCell.swift */,
+				9ADE4B572806AA5400D6ACA6 /* WorldClock.storyboard */,
+				14CE7A7328165CE30039F349 /* ChooseACity.storyboard */,
+				14CE7A78281663200039F349 /* ChooseACityTableViewCell.xib */,
+			);
+			path = WorldClock;
+			sourceTree = "<group>";
+		};
+		9A63116C28082F2F00E2B4E6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9A63116D28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		9ADE4B372806A66F00D6ACA6 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +119,22 @@
 		9ADE4B422806A66F00D6ACA6 /* Clock */ = {
 			isa = PBXGroup;
 			children = (
+				146667CF28325002003FEDA8 /* NotificationName.swift */,
+				9A63116C28082F2F00E2B4E6 /* Extension */,
+				9A4AC0F8280713AC00D3F7EE /* WorldClock */,
 				9ADE4B432806A66F00D6ACA6 /* AppDelegate.swift */,
 				9ADE4B452806A66F00D6ACA6 /* SceneDelegate.swift */,
 				9ADE4B472806A66F00D6ACA6 /* ViewController.swift */,
 				9ADE4B492806A66F00D6ACA6 /* Main.storyboard */,
+				9ADE4B5B2806AB7D00D6ACA6 /* Alarm.storyboard */,
+				9ADE4B602806AC2500D6ACA6 /* Stopwatch.storyboard */,
+				9ADE4B622806AC3E00D6ACA6 /* Timer.storyboard */,
 				9ADE4B4C2806A67000D6ACA6 /* Assets.xcassets */,
 				9ADE4B4E2806A67100D6ACA6 /* LaunchScreen.storyboard */,
 				9ADE4B512806A67100D6ACA6 /* Info.plist */,
+				9ADE4B642806AD1E00D6ACA6 /* AlarmViewController.swift */,
+				9ADE4B662806AD4600D6ACA6 /* StopwatchViewController.swift */,
+				9ADE4B682806AD6700D6ACA6 /* TimerViewController.swift */,
 			);
 			path = Clock;
 			sourceTree = "<group>";
@@ -125,8 +197,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CE7A7428165CE30039F349 /* ChooseACity.storyboard in Resources */,
+				9ADE4B582806AA5400D6ACA6 /* WorldClock.storyboard in Resources */,
 				9ADE4B502806A67100D6ACA6 /* LaunchScreen.storyboard in Resources */,
+				14CE7A7A281663200039F349 /* ChooseACityTableViewCell.xib in Resources */,
 				9ADE4B4D2806A67000D6ACA6 /* Assets.xcassets in Resources */,
+				9ADE4B5C2806AB7D00D6ACA6 /* Alarm.storyboard in Resources */,
+				9ADE4B612806AC2500D6ACA6 /* Stopwatch.storyboard in Resources */,
+				9ADE4B632806AC3E00D6ACA6 /* Timer.storyboard in Resources */,
 				9ADE4B4B2806A66F00D6ACA6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,9 +216,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A63116E28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift in Sources */,
+				9A4AC0FA2807146900D3F7EE /* CityClock.swift in Sources */,
+				9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */,
+				9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */,
+				14CE7A7C2816639A0039F349 /* ChooseACityViewController.swift in Sources */,
+				9ADE4B5A2806AA7300D6ACA6 /* WorldClockViewController.swift in Sources */,
+				9ADE4B692806AD6700D6ACA6 /* TimerViewController.swift in Sources */,
 				9ADE4B482806A66F00D6ACA6 /* ViewController.swift in Sources */,
 				9ADE4B442806A66F00D6ACA6 /* AppDelegate.swift in Sources */,
+				146667D028325002003FEDA8 /* NotificationName.swift in Sources */,
 				9ADE4B462806A66F00D6ACA6 /* SceneDelegate.swift in Sources */,
+				14CE7A79281663200039F349 /* ChooseACityTableViewCell.swift in Sources */,
+				9A4AC0F728070CE700D3F7EE /* WorldClockTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
