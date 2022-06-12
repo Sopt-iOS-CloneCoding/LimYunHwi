@@ -15,21 +15,106 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZXO-p7-yNl">
+                                <rect key="frame" x="0.0" y="44" width="414" height="400"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="400" id="GSf-N2-pUR"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="X6b-HC-h0p" kind="embed" identifier="StopwatchPageViewController" id="zgz-PA-5Nm"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ZXO-p7-yNl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UqJ-NL-SIw"/>
+                            <constraint firstItem="ZXO-p7-yNl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y3m-d7-fgQ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZXO-p7-yNl" secondAttribute="trailing" id="w4e-rH-K5P"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="스톱워치" image="stopwatch.fill" catalog="system" id="bVL-3F-sXx"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="38" y="66"/>
+            <point key="canvasLocation" x="37.681159420289859" y="65.625"/>
+        </scene>
+        <!--Clock Image View Controller-->
+        <scene sceneID="lzI-sW-fca">
+            <objects>
+                <viewController storyboardIdentifier="ClockImageViewController" id="vUR-EY-LCc" customClass="ClockImageViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lXY-Qb-C9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="clock" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="14s-7x-Zqx">
+                                <rect key="frame" x="107" y="348.5" width="200" height="199"/>
+                                <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="RxL-PH-GOs"/>
+                                    <constraint firstAttribute="height" constant="200" id="lmS-Gw-rug"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="zbd-xa-Ekx"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="14s-7x-Zqx" firstAttribute="centerY" secondItem="lXY-Qb-C9Z" secondAttribute="centerY" id="VIU-NW-ego"/>
+                            <constraint firstItem="14s-7x-Zqx" firstAttribute="centerX" secondItem="lXY-Qb-C9Z" secondAttribute="centerX" id="ZqU-3O-c1L"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LG7-cN-odC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="350"/>
+        </scene>
+        <!--Stopwatch Page View Controller-->
+        <scene sceneID="O5E-po-51t">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="X6b-HC-h0p" customClass="StopwatchPageViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UUh-kz-6qD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="99" y="-490"/>
+        </scene>
+        <!--Time Label View Controller-->
+        <scene sceneID="3QC-61-vIv">
+            <objects>
+                <viewController storyboardIdentifier="TimeLabelViewController" id="ufS-OO-cEH" customClass="TimeLabelViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5Pe-eb-8jB">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gn3-Vt-jIS">
+                                <rect key="frame" x="10" y="412" width="394" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NBn-mk-q1l"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gn3-Vt-jIS" firstAttribute="centerY" secondItem="5Pe-eb-8jB" secondAttribute="centerY" id="jAp-ZV-XJM"/>
+                            <constraint firstItem="NBn-mk-q1l" firstAttribute="trailing" secondItem="gn3-Vt-jIS" secondAttribute="trailing" constant="10" id="mIT-9D-kiz"/>
+                            <constraint firstItem="gn3-Vt-jIS" firstAttribute="centerX" secondItem="5Pe-eb-8jB" secondAttribute="centerX" id="oBz-VD-zRu"/>
+                            <constraint firstItem="gn3-Vt-jIS" firstAttribute="leading" secondItem="NBn-mk-q1l" secondAttribute="leading" constant="10" id="x38-4s-jz0"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9LZ-1p-7JR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="938" y="-342"/>
         </scene>
     </scenes>
     <resources>
+        <image name="clock" catalog="system" width="128" height="121"/>
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
