@@ -25,12 +25,40 @@
                                     <segue destination="X6b-HC-h0p" kind="embed" identifier="StopwatchPageViewController" id="zgz-PA-5Nm"/>
                                 </connections>
                             </containerView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ucj-ec-O2n" customClass="CustomButton" customModule="Clock" customModuleProvider="target">
+                                <rect key="frame" x="304" y="384" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="czL-dg-kAH"/>
+                                    <constraint firstAttribute="height" constant="80" id="mjb-Bd-mw2"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="시작">
+                                    <color key="baseForegroundColor" systemColor="systemGreenColor"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGreenColor"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XtE-qg-WlW" customClass="CustomButton" customModule="Clock" customModuleProvider="target">
+                                <rect key="frame" x="30" y="384" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="Uze-Rg-9zQ"/>
+                                    <constraint firstAttribute="width" constant="80" id="o8b-5h-KKL"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="tinted" title="랩">
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="baseBackgroundColor" systemColor="systemGray2Color"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ucj-ec-O2n" secondAttribute="trailing" constant="30" id="2g1-U5-Jac"/>
+                            <constraint firstItem="XtE-qg-WlW" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="30" id="3By-fx-1Gy"/>
                             <constraint firstItem="ZXO-p7-yNl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="UqJ-NL-SIw"/>
                             <constraint firstItem="ZXO-p7-yNl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y3m-d7-fgQ"/>
+                            <constraint firstItem="XtE-qg-WlW" firstAttribute="top" secondItem="ZXO-p7-yNl" secondAttribute="bottom" constant="-60" id="fDi-fI-RLT"/>
+                            <constraint firstItem="ucj-ec-O2n" firstAttribute="top" secondItem="ZXO-p7-yNl" secondAttribute="bottom" constant="-60" id="s95-Mf-tB4"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="ZXO-p7-yNl" secondAttribute="trailing" id="w4e-rH-K5P"/>
                         </constraints>
                     </view>
@@ -112,6 +140,12 @@
         <image name="stopwatch.fill" catalog="system" width="121" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGreenColor">
+            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
             <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
