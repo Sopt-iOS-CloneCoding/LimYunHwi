@@ -10,6 +10,7 @@
 		142EDD2C28449CCD0050968C /* TimeLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EDD2B28449CCD0050968C /* TimeLabelViewController.swift */; };
 		142EDD2E28449D020050968C /* ClockImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EDD2D28449D020050968C /* ClockImageViewController.swift */; };
 		142EDD3028449D4F0050968C /* StopwatchPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142EDD2F28449D4F0050968C /* StopwatchPageViewController.swift */; };
+		14507CCD285756E000AA69B4 /* StopwatchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14507CCC285756E000AA69B4 /* StopwatchTableViewCell.swift */; };
 		146667D028325002003FEDA8 /* NotificationName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 146667CF28325002003FEDA8 /* NotificationName.swift */; };
 		14A34C3A28560B8F00E9FDBF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14A34C3928560B8F00E9FDBF /* CustomButton.swift */; };
 		14CE7A7428165CE30039F349 /* ChooseACity.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14CE7A7328165CE30039F349 /* ChooseACity.storyboard */; };
@@ -39,6 +40,7 @@
 		142EDD2B28449CCD0050968C /* TimeLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabelViewController.swift; sourceTree = "<group>"; };
 		142EDD2D28449D020050968C /* ClockImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockImageViewController.swift; sourceTree = "<group>"; };
 		142EDD2F28449D4F0050968C /* StopwatchPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchPageViewController.swift; sourceTree = "<group>"; };
+		14507CCC285756E000AA69B4 /* StopwatchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopwatchTableViewCell.swift; sourceTree = "<group>"; };
 		146667CF28325002003FEDA8 /* NotificationName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationName.swift; sourceTree = "<group>"; };
 		14A34C3928560B8F00E9FDBF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		14CE7A7328165CE30039F349 /* ChooseACity.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ChooseACity.storyboard; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				142EDD2D28449D020050968C /* ClockImageViewController.swift */,
 				142EDD2F28449D4F0050968C /* StopwatchPageViewController.swift */,
 				14A34C3928560B8F00E9FDBF /* CustomButton.swift */,
+				14507CCC285756E000AA69B4 /* StopwatchTableViewCell.swift */,
 			);
 			path = Stopwatch;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A63116E28082FCA00E2B4E6 /* UIBarButtonItemExtension.swift in Sources */,
+				14507CCD285756E000AA69B4 /* StopwatchTableViewCell.swift in Sources */,
 				9A4AC0FA2807146900D3F7EE /* CityClock.swift in Sources */,
 				9ADE4B672806AD4600D6ACA6 /* StopwatchViewController.swift in Sources */,
 				9ADE4B652806AD1E00D6ACA6 /* AlarmViewController.swift in Sources */,
